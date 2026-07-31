@@ -71,10 +71,10 @@ export function Footer() {
                 <Mail className="h-4 w-4 text-accent" /> hello@ftdynamics.pk
               </a>
               <a
-                href="tel:+920000000000"
+                href="tel:+92518443837"
                 className="flex items-center gap-2.5 text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Phone className="h-4 w-4 text-accent" /> +92 00 000 0000
+                <Phone className="h-4 w-4 text-accent" /> +92 (51) 844-3837
               </a>
               <p className="flex items-center gap-2.5 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-accent" /> Islamabad, Pakistan

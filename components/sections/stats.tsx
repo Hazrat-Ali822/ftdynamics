@@ -1,21 +1,13 @@
 'use client';
 
 import * as React from 'react';
-import {
-  motion,
-  useInView,
-  useMotionValue,
-  useSpring,
-  useTransform,
-  animate,
-} from 'framer-motion';
+import { motion, useInView, animate } from 'framer-motion';
 
 type Stat = {
   value: number;
   suffix?: string;
   prefix?: string;
   label: string;
-  sublabel?: string;
 };
 
 const stats: Stat[] = [
@@ -29,24 +21,24 @@ const stats: Stat[] = [
 function Counter({ stat }: { stat: Stat }) {
   const ref = React.useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: '-40px' });
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (v) => Math.round(v));
-  const spring = useSpring(rounded, { duration: 1600, bounce: 0 });
+  const [displayValue, setDisplayValue] = React.useState(0);
 
   React.useEffect(() => {
-    if (inView) {
-      const controls = animate(count, stat.value, {
-        duration: 1.6,
-        ease: [0.22, 1, 0.36, 1],
-      });
-      return controls.stop;
-    }
-  }, [inView, stat.value, count]);
+    if (!inView) return;
+    const controls = animate(0, stat.value, {
+      duration: 1.6,
+      ease: [0.22, 1, 0.36, 1],
+      onUpdate: (latest) => {
+        setDisplayValue(Math.round(latest));
+      },
+    });
+    return () => controls.stop();
+  }, [inView, stat.value]);
 
   return (
     <span ref={ref} className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
       {stat.prefix}
-      <motion.span>{spring}</motion.span>
+      {displayValue}
       {stat.suffix}
     </span>
   );
@@ -54,23 +46,20 @@ function Counter({ stat }: { stat: Stat }) {
 
 export function Stats() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/2 h-72 w-[680px] -translate-x-1/2 -translate-y-1/2 glow-primary blur-2xl" />
-      </div>
+    <section className="relative overflow-hidden border-y border-border/50 bg-white py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="text-center"
             >
               <Counter stat={stat} />
-              <p className="mt-3 text-sm font-medium text-foreground">{stat.label}</p>
+              <p className="mt-2.5 text-sm font-medium text-muted-foreground">{stat.label}</p>
             </motion.div>
           ))}
         </div>

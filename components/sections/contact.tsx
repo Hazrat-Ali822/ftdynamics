@@ -131,7 +131,7 @@ export function Contact() {
                     <Field label="Phone" error={errors.phone?.message}>
                       <input
                         {...register('phone')}
-                        placeholder="+92 300 0000000"
+                        placeholder="+92 300 1234567"
                         className={inputClass()}
                       />
                     </Field>
@@ -213,14 +213,14 @@ export function Contact() {
                       </p>
                     </div>
                   </a>
-                  <a href="tel:+920000000000" className="group flex items-start gap-3.5">
+                  <a href="tel:+92518443837" className="group flex items-start gap-3.5">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
                       <Phone className="h-5 w-5" />
                     </span>
                     <div>
                       <p className="text-xs text-muted-foreground">Call us</p>
                       <p className="text-sm font-medium text-foreground">
-                        +92 00 000 0000
+                        +92 (51) 844-3837
                       </p>
                     </div>
                   </a>
@@ -238,7 +238,7 @@ export function Contact() {
                 </div>
 
                 <a
-                  href="https://wa.me/920000000000"
+                  href="https://wa.me/92518443837"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(37,211,102,0.3)] transition-all hover:shadow-[0_10px_30px_rgba(37,211,102,0.45)]"
