@@ -37,19 +37,19 @@ const caseStudies = [
     url: 'https://khabirconsultant.ae',
     displayUrl: 'khabirconsultant.ae',
     industry: 'MEP Electromechanical Engineering · UAE (FEWA Category-1)',
-    title: 'FEWA Category-1 MEP Design, Authority Approvals & Supervision Systems',
+    title: 'FEWA Category-1 33 kV MEP Engineering, Authority NOC Approvals & Supervision',
     challenge:
-      'Commercial buildings, industrial facilities, and residential towers in Ras Al Khaimah and the Northern Emirates required certified 33 kV electrical designs, HVAC load engineering, plumbing, fire fighting systems, and Etisalat/Civil Defence authority NOC approvals under strict timelines.',
+      'Commercial towers, industrial plants, and residential developments in Ras Al Khaimah and Northern Emirates required certified 33 kV electrical designs, HVAC thermal calculations, fire fighting systems, and mandatory FEWA / Civil Defence / Etisalat authority NOC approvals under strict timelines.',
     solution:
-      'We engineered an integrated MEP design, compliance management, and site supervision tracking platform providing digital CAD review, authority approval progress tracking, and 33 kV sub-station inspection logging.',
-    technologies: ['33 kV Electrical', 'HVAC Design', 'FEWA & Civil Defence', 'Fire & Low-Current', 'Next.js'],
+      'We developed a specialized MEP engineering & compliance management platform providing digital CAD/BIM load analysis, authority NOC tracking, 33 kV sub-station inspection logging, and engineer-of-record site supervision workflows.',
+    technologies: ['33 kV Electrical', 'HVAC Thermal', 'FEWA & Civil Defence', 'Fire & Plumbing', 'Next.js'],
     results: [
       { label: 'FEWA Licensing', value: 'Category-1' },
-      { label: 'Voltage Approval', value: '33 kV' },
+      { label: 'Voltage License', value: '33 kV' },
       { label: 'Authority NOC Rate', value: '100%' },
     ],
     impact:
-      'Deployed live at khabirconsultant.ae, managing MEP engineering designs, FEWA / Civil Defence / Etisalat authority approvals, and engineer-of-record site supervision for major construction projects across RAK and the UAE.',
+      'Deployed live at khabirconsultant.ae, managing electromechanical engineering designs, FEWA / Civil Defence / Etisalat authority approvals, and engineer-of-record site supervision for major construction projects across RAK and the UAE.',
   },
   {
     client: 'Barqiya',
@@ -58,7 +58,7 @@ const caseStudies = [
     industry: 'Engineering & Tech Services · UAE',
     title: 'Integrated Electrical, Mechanical, CCTV & IT Networking Infrastructure',
     challenge:
-      'Commercial high-rises, residential complexes, and logistics hubs across the UAE required integrated electrical low-voltage systems, HVAC mechanical solutions, SIRA/HEMAYA-compliant CCTV surveillance, and data center network architecture delivered under a single certified contractor.',
+      'Commercial high-rises, residential complexes, and logistics hubs across Dubai and the UAE required integrated electrical low-voltage systems, HVAC mechanical solutions, SIRA/HEMAYA-compliant CCTV surveillance, and data center network architecture delivered under a single certified contractor.',
     solution:
       'We engineered a unified technology & engineering management portal with real-time remote monitoring, switchgear audit tracking, FEWA/HEMAYA compliance verification, and structured IT cabling architecture.',
     technologies: ['Electrical LV', 'HVAC Mechanical', 'CCTV & SIRA', 'Fiber Networking', 'Next.js'],
@@ -87,13 +87,13 @@ export function CaseStudies() {
         />
 
         <div className="mt-16 space-y-8">
-          {caseStudies.map((cs, i) => (
+          {caseStudies.map((cs) => (
             <motion.article
               key={cs.client}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="overflow-hidden rounded-3xl border border-border bg-white shadow-card"
             >
               <div className="grid gap-8 p-7 lg:grid-cols-12 lg:gap-10 lg:p-10">
@@ -107,9 +107,10 @@ export function CaseStudies() {
                       href={cs.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent transition-colors hover:bg-accent hover:text-white"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3.5 py-1 text-xs font-semibold text-accent transition-all hover:bg-accent hover:text-white"
+                      title={`Visit ${cs.displayUrl} live website`}
                     >
-                      <ExternalLink className="h-3 w-3" />
+                      <ExternalLink className="h-3.5 w-3.5" />
                       {cs.displayUrl}
                     </a>
                     <span className="rounded-full bg-bg-secondary px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
@@ -181,10 +182,10 @@ export function CaseStudies() {
                       href={cs.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-accent shadow-md"
+                      className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-accent shadow-md group"
                     >
-                      Visit Live Platform
-                      <ArrowUpRight className="h-4 w-4" />
+                      Visit {cs.client} Live Site ({cs.displayUrl})
+                      <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
                   </div>
                 </div>
