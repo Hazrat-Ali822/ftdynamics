@@ -161,8 +161,8 @@ export function Hero() {
         </div>
 
         {/* Right: device composition */}
-        <div className="relative mt-8 lg:mt-0 lg:col-span-6">
-          <div className="relative mx-auto h-[360px] w-full max-w-[580px] sm:h-[460px] lg:h-[540px]">
+        <div className="relative mt-8 lg:mt-0 lg:col-span-6 w-full max-w-full overflow-hidden sm:overflow-visible">
+          <div className="relative mx-auto h-[360px] w-full max-w-full sm:max-w-[580px] sm:h-[460px] lg:h-[540px]">
             {/* Main Laptop Dashboard */}
             <motion.div
               style={{ y: yLaptop }}

@@ -96,8 +96,8 @@ export default function RootLayout({
     },
   };
   return (
-    <html lang="en" className={cn(inter.variable, sora.variable)}>
-      <body className="font-body antialiased">
+    <html lang="en" className={cn(inter.variable, sora.variable, 'overflow-x-hidden')}>
+      <body className="font-body antialiased overflow-x-hidden max-w-full">
         {children}
         <script
           type="application/ld+json"

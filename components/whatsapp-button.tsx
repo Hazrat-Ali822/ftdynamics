@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
 
 export function WhatsAppButton() {
   return (
@@ -13,11 +12,18 @@ export function WhatsAppButton() {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.96 }}
-      className="fixed bottom-5 right-5 z-50 inline-flex h-13 w-13 items-center justify-center rounded-full bg-[#25D366] p-3.5 text-white shadow-[0_10px_30px_rgba(37,211,102,0.4)]"
+      whileHover={{ scale: 1.08 }}
+      whileTap={{ scale: 0.94 }}
+      className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_rgba(37,211,102,0.45)] hover:bg-[#20ba5a] transition-colors"
     >
-      <MessageCircle className="h-6 w-6" />
+      {/* Official WhatsApp SVG Logo */}
+      <svg
+        className="h-8 w-8 fill-current"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.752 0-3.472-.471-4.975-1.365l-.356-.21-3.698.97 0.987-3.606-.23-.367c-.98-1.564-1.498-3.376-1.498-5.235 0-5.428 4.417-9.845 9.847-9.845 2.63 0 5.101 1.025 6.958 2.884 1.859 1.86 2.883 4.331 2.883 6.96 0 5.43-4.417 9.844-9.848 9.844m0-18.067c-4.536 0-8.227 3.69-8.227 8.223 0 1.764.558 3.424 1.614 4.799l.252.327-.577 2.109 2.158-.566.315.205c1.332.868 2.89 1.328 4.465 1.328 4.538 0 8.228-3.69 8.228-8.223 0-2.2-.857-4.267-2.416-5.826-1.558-1.559-3.627-2.416-5.827-2.416" />
+      </svg>
       <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[#25D366] opacity-30" />
     </motion.a>
   );
