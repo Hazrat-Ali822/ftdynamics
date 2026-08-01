@@ -12,7 +12,7 @@ import { Portfolio } from '@/components/sections/portfolio';
 import { CaseStudies } from '@/components/sections/case-studies';
 import { Process } from '@/components/sections/process';
 import { TechStack } from '@/components/sections/tech-stack';
-import { Testimonials } from '@/components/sections/testimonials';
+// import { Testimonials } from '@/components/sections/testimonials';
 import { CTASection } from '@/components/sections/cta';
 import { FAQ } from '@/components/sections/faq';
 import { Contact } from '@/components/sections/contact';
@@ -33,7 +33,7 @@ export default function Home() {
         <CaseStudies />
         <Process />
         <TechStack />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <CTASection />
         <FAQ />
         <Contact />
