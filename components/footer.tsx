@@ -64,16 +64,18 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-2.5 text-sm">
               <a
-                href="mailto:hello@ftdynamics.pk"
+                href="mailto:info@ftdynamics.pk"
                 className="flex items-center gap-2.5 text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Mail className="h-4 w-4 text-accent" /> hello@ftdynamics.pk
+                <Mail className="h-4 w-4 text-accent" /> info@ftdynamics.pk
               </a>
               <a
-                href="tel:+92518443837"
+                href="https://wa.me/923140338880"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Phone className="h-4 w-4 text-accent" /> +92 (51) 844-3837
+                <Phone className="h-4 w-4 text-accent" /> +92 314 0338880
               </a>
               <p className="flex items-center gap-2.5 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-accent" /> Islamabad, Pakistan

@@ -86,7 +86,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'Future Tech Dynamics',
     url: siteUrl,
-    email: 'hello@ftdynamics.pk',
+    email: 'info@ftdynamics.pk',
     description:
       'Software development company building scalable software, SaaS platforms, enterprise software, mobile apps, and AI-powered solutions.',
     address: {

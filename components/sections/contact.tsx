@@ -131,7 +131,7 @@ export function Contact() {
                     <Field label="Phone" error={errors.phone?.message}>
                       <input
                         {...register('phone')}
-                        placeholder="+92 300 1234567"
+                        placeholder="+92 314 0338880"
                         className={inputClass()}
                       />
                     </Field>
@@ -200,7 +200,7 @@ export function Contact() {
                 </h3>
                 <div className="mt-5 space-y-4">
                   <a
-                    href="mailto:hello@ftdynamics.pk"
+                    href="mailto:info@ftdynamics.pk"
                     className="group flex items-start gap-3.5"
                   >
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
@@ -209,18 +209,18 @@ export function Contact() {
                     <div>
                       <p className="text-xs text-muted-foreground">Email us</p>
                       <p className="text-sm font-medium text-foreground">
-                        hello@ftdynamics.pk
+                        info@ftdynamics.pk
                       </p>
                     </div>
                   </a>
-                  <a href="tel:+92518443837" className="group flex items-start gap-3.5">
+                  <a href="https://wa.me/923140338880" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-3.5">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
                       <Phone className="h-5 w-5" />
                     </span>
                     <div>
-                      <p className="text-xs text-muted-foreground">Call us</p>
+                      <p className="text-xs text-muted-foreground">Call or WhatsApp</p>
                       <p className="text-sm font-medium text-foreground">
-                        +92 (51) 844-3837
+                        +92 314 0338880
                       </p>
                     </div>
                   </a>
@@ -238,7 +238,7 @@ export function Contact() {
                 </div>
 
                 <a
-                  href="https://wa.me/92518443837"
+                  href="https://wa.me/923140338880"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(37,211,102,0.3)] transition-all hover:shadow-[0_10px_30px_rgba(37,211,102,0.45)]"
