@@ -222,49 +222,49 @@ export function HospitalDashboard({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'rounded-2xl border border-white/20 bg-white p-4 shadow-2xl backdrop-blur-xl',
+        'rounded-xl sm:rounded-2xl border border-white/20 bg-white p-2.5 sm:p-4 shadow-2xl backdrop-blur-xl',
         className
       )}
     >
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-red-500">
-            <HeartPulse className="h-4 w-4" />
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <span className="inline-flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-lg bg-red-500/10 text-red-500">
+            <HeartPulse className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
           </span>
           <div>
-            <p className="text-xs font-bold text-foreground">SehatYar HMS</p>
-            <p className="text-[9px] text-muted-foreground">Hospital Management</p>
+            <p className="text-[11px] sm:text-xs font-bold text-foreground">SehatYar HMS</p>
+            <p className="text-[8px] sm:text-[9px] text-muted-foreground">Hospital Management</p>
           </div>
         </div>
-        <span className="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[9.5px] font-semibold text-emerald-600 border border-emerald-500/20">
+        <span className="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[8.5px] sm:text-[9.5px] font-semibold text-emerald-600 border border-emerald-500/20">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
           Live
         </span>
       </div>
 
-      <div className="mt-3.5 grid grid-cols-2 gap-2.5">
+      <div className="mt-2.5 sm:mt-3.5 grid grid-cols-2 gap-1.5 sm:gap-2.5">
         {[
           { label: 'Patients today', val: '248', icon: Users, color: 'text-blue-500' },
           { label: 'Appointments', val: '56', icon: CalendarDays, color: 'text-emerald-500' },
           { label: 'Doctors on duty', val: '18', icon: Stethoscope, color: 'text-purple-500' },
           { label: 'Bed occupancy', val: '74%', icon: Activity, color: 'text-amber-500' },
         ].map((s) => (
-          <div key={s.label} className="rounded-xl border border-border/80 bg-bg-secondary/70 p-2.5">
-            <s.icon className={cn('h-3.5 w-3.5', s.color)} />
-            <p className="mt-1 font-heading text-sm font-bold text-foreground">
+          <div key={s.label} className="rounded-lg sm:rounded-xl border border-border/80 bg-bg-secondary/70 p-2 sm:p-2.5">
+            <s.icon className={cn('h-3 w-3 sm:h-3.5 sm:w-3.5', s.color)} />
+            <p className="mt-1 font-heading text-xs sm:text-sm font-bold text-foreground">
               {s.val}
             </p>
-            <p className="text-[9px] font-medium text-muted-foreground">{s.label}</p>
+            <p className="text-[8px] sm:text-[9px] font-medium text-muted-foreground">{s.label}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-3 rounded-xl border border-border/80 bg-bg-secondary/70 p-2.5">
-        <div className="flex items-center justify-between text-[9.5px]">
-          <span className="font-semibold text-foreground">Weekly OPD Admissions</span>
+      <div className="mt-2 sm:mt-3 rounded-lg sm:rounded-xl border border-border/80 bg-bg-secondary/70 p-2 sm:p-2.5">
+        <div className="flex items-center justify-between text-[8.5px] sm:text-[9.5px]">
+          <span className="font-semibold text-foreground">OPD Admissions</span>
           <span className="text-emerald-600 font-bold">+18.4%</span>
         </div>
-        <div className="mt-2 h-10">
+        <div className="mt-1.5 h-8 sm:h-10">
           <GradientBars data={[35, 55, 40, 70, 50, 85, 65]} />
         </div>
       </div>

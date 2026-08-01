@@ -161,44 +161,44 @@ export function Hero() {
         </div>
 
         {/* Right: device composition */}
-        <div className="relative lg:col-span-6">
-          <div className="relative mx-auto h-[480px] w-full max-w-[580px] sm:h-[540px]">
+        <div className="relative mt-8 lg:mt-0 lg:col-span-6">
+          <div className="relative mx-auto h-[360px] w-full max-w-[580px] sm:h-[460px] lg:h-[540px]">
             {/* Main Laptop Dashboard */}
             <motion.div
               style={{ y: yLaptop }}
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute left-0 top-4 z-20 w-full"
+              className="absolute left-0 top-0 sm:top-4 z-20 w-full"
             >
-              <div className="rounded-2xl border border-white/10 bg-[#070d19] p-2 shadow-[0_20px_50px_rgba(14,49,90,0.3)]">
+              <div className="rounded-xl sm:rounded-2xl border border-white/10 bg-[#070d19] p-1.5 sm:p-2 shadow-[0_20px_50px_rgba(14,49,90,0.3)]">
                 <LaptopDashboard />
               </div>
-              <div className="mx-auto h-2.5 w-36 rounded-b-xl bg-[#070d19]" />
-              <div className="mx-auto h-1 w-48 rounded-b-md bg-[#040810]" />
+              <div className="mx-auto h-2 w-28 sm:h-2.5 sm:w-36 rounded-b-xl bg-[#070d19]" />
+              <div className="mx-auto h-1 w-36 sm:w-48 rounded-b-md bg-[#040810]" />
             </motion.div>
 
             {/* SehatYar Floating Widget */}
             <motion.div
               style={{ y: yTablet }}
-              initial={{ opacity: 0, x: 40, y: 20 }}
+              initial={{ opacity: 0, x: 30, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.8, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute -right-3 bottom-6 z-30 w-[54%] sm:w-[50%] shadow-2xl"
+              className="absolute right-0 bottom-1 sm:bottom-6 z-30 w-[72%] sm:w-[50%] shadow-2xl"
             >
               <HospitalDashboard />
             </motion.div>
 
             {/* Floating Glow Chips */}
             <FloatingChip
-              className="absolute -left-3 -top-2 z-40"
+              className="absolute -left-3 -top-2 z-40 hidden sm:flex"
               icon={Activity}
               label="Uptime SLA"
               value="99.99%"
               tone="green"
             />
             <FloatingChip
-              className="absolute left-4 -bottom-3 z-40"
+              className="absolute left-2 -bottom-2 z-40 hidden sm:flex"
               icon={HeartPulse}
               label="SehatYar Facilities"
               value="10+ Live"
