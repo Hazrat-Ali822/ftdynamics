@@ -162,57 +162,46 @@ export function Hero() {
 
         {/* Right: device composition */}
         <div className="relative lg:col-span-6">
-          <div className="relative mx-auto h-[440px] w-full max-w-[560px] sm:h-[520px]">
-            {/* Laptop */}
+          <div className="relative mx-auto h-[480px] w-full max-w-[580px] sm:h-[540px]">
+            {/* Main Laptop Dashboard */}
             <motion.div
               style={{ y: yLaptop }}
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute left-0 top-8 z-20 w-[88%]"
+              className="absolute left-0 top-4 z-20 w-full"
             >
-              <div className="rounded-xl border border-border/70 bg-[#1c2333] p-2 shadow-soft">
+              <div className="rounded-2xl border border-white/10 bg-[#070d19] p-2 shadow-[0_20px_50px_rgba(14,49,90,0.3)]">
                 <LaptopDashboard />
               </div>
-              <div className="mx-auto h-2.5 w-32 rounded-b-xl bg-gradient-to-b from-[#1c2333] to-[#0f1420]" />
-              <div className="mx-auto h-1 w-44 rounded-b-md bg-[#0f1420]" />
+              <div className="mx-auto h-2.5 w-36 rounded-b-xl bg-[#070d19]" />
+              <div className="mx-auto h-1 w-48 rounded-b-md bg-[#040810]" />
             </motion.div>
 
-            {/* Tablet (hospital) */}
+            {/* SehatYar Floating Widget */}
             <motion.div
               style={{ y: yTablet }}
               initial={{ opacity: 0, x: 40, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.8, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute right-0 top-44 z-30 w-[46%] animate-float-slow"
+              className="absolute -right-3 bottom-6 z-30 w-[54%] sm:w-[50%] shadow-2xl"
             >
               <HospitalDashboard />
             </motion.div>
 
-            {/* Mobile */}
-            <motion.div
-              style={{ y: yMobile }}
-              initial={{ opacity: 0, y: 30, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.56, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute -bottom-2 left-2 z-30 w-[26%] animate-float sm:left-6"
-            >
-              <MobileDashboard />
-            </motion.div>
-
-            {/* Floating chips */}
+            {/* Floating Glow Chips */}
             <FloatingChip
-              className="absolute -left-2 top-2 z-40 animate-float-slow"
+              className="absolute -left-3 -top-2 z-40"
               icon={Activity}
-              label="Uptime"
-              value="99.9%"
+              label="Uptime SLA"
+              value="99.99%"
               tone="green"
             />
             <FloatingChip
-              className="absolute -right-1 bottom-24 z-40 animate-float"
+              className="absolute left-4 -bottom-3 z-40"
               icon={HeartPulse}
-              label="Live patients"
-              value="248"
+              label="SehatYar Facilities"
+              value="10+ Live"
               tone="accent"
             />
           </div>
