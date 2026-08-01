@@ -17,7 +17,7 @@ export default function TermsPage() {
         <h1 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Terms of Service
         </h1>
-        <p className="mt-3 text-sm text-muted-foreground">Last updated: July 2026</p>
+        <p className="mt-3 text-sm text-muted-foreground">Last updated: July 2024</p>
         <div className="mt-10 space-y-6 text-[15px] leading-relaxed text-muted-foreground">
           <Section title="Acceptance of terms">
             By accessing or using the Future Tech Dynamics website, you agree to

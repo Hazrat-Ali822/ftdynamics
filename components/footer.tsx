@@ -205,7 +205,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Future Tech Dynamics. All rights reserved.</p>
+          <p>© 2024 Future Tech Dynamics. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             Built with precision in Pakistan
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
