@@ -14,7 +14,6 @@ import { Process } from '@/components/sections/process';
 import { TechStack } from '@/components/sections/tech-stack';
 import { Testimonials } from '@/components/sections/testimonials';
 import { CTASection } from '@/components/sections/cta';
-import { Blog } from '@/components/sections/blog';
 import { FAQ } from '@/components/sections/faq';
 import { Contact } from '@/components/sections/contact';
 
@@ -36,7 +35,6 @@ export default function Home() {
         <TechStack />
         <Testimonials />
         <CTASection />
-        <Blog />
         <FAQ />
         <Contact />
       </main>

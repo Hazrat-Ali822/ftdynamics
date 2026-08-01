@@ -21,7 +21,6 @@ const quickLinks = [
   { label: 'Products', href: '/#products' },
   { label: 'Portfolio', href: '/#portfolio' },
   { label: 'Case Studies', href: '/#case-studies' },
-  { label: 'Blog', href: '/#blog' },
 ];
 
 const serviceLinks = [
