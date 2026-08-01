@@ -55,20 +55,20 @@ const caseStudies = [
     client: 'Barqiya',
     url: 'https://barqiya.ae',
     displayUrl: 'barqiya.ae',
-    industry: 'Corporate · Enterprise ERP & Logistics Automation',
-    title: 'Unifying Enterprise Workflows & Fleet Logistics',
+    industry: 'Engineering & Tech Services · UAE',
+    title: 'Integrated Electrical, Mechanical, CCTV & IT Networking Infrastructure',
     challenge:
-      'Managing cross-departmental operations, order dispatch, fleet tracking, and financial ledgers across disconnected spreadsheets created operational lag and reporting bottlenecks.',
+      'Commercial high-rises, residential complexes, and logistics hubs across the UAE required integrated electrical low-voltage systems, HVAC mechanical solutions, SIRA/HEMAYA-compliant CCTV surveillance, and data center network architecture delivered under a single certified contractor.',
     solution:
-      'We developed a unified enterprise resource planning (ERP) platform featuring automated fleet dispatching, real-time ledger accounting, role-based admin controls, and operational analytics.',
-    technologies: ['Next.js', 'TypeScript', 'Node.js', 'Postgres', 'Docker'],
+      'We engineered a unified technology & engineering management portal with real-time remote monitoring, switchgear audit tracking, FEWA/HEMAYA compliance verification, and structured IT cabling architecture.',
+    technologies: ['Electrical LV', 'HVAC Mechanical', 'CCTV & SIRA', 'Fiber Networking', 'Next.js'],
     results: [
-      { label: 'Operational Lag', value: '−80%' },
-      { label: 'Logistics Accuracy', value: '99.6%' },
-      { label: 'Units Onboarded', value: '12+' },
+      { label: 'Projects Delivered', value: '500+' },
+      { label: 'Engineering Experience', value: '12+ Yrs' },
+      { label: 'Compliance Level', value: '100%' },
     ],
     impact:
-      'Consolidated Barqiya core business workflows into a single real-time dashboard, giving executive leadership live visibility over operations and finances.',
+      'Deployed live at barqiya.ae, powering end-to-end electrical, mechanical, CCTV surveillance, and IT networking infrastructure for commercial and industrial projects across Dubai and the Emirates.',
   },
 ];
 
