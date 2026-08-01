@@ -108,6 +108,11 @@ export default function RootLayout({
   };
   return (
     <html lang="en" className={cn(inter.variable, sora.variable, 'overflow-x-hidden')}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+      </head>
       <body className="font-body antialiased overflow-x-hidden max-w-full">
         {children}
         <script
