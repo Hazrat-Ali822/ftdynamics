@@ -24,6 +24,16 @@ export const metadata: Metadata = {
     default: 'Future Tech Dynamics — Building Future-Ready Digital Solutions',
     template: '%s | Future Tech Dynamics',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   description:
     'Future Tech Dynamics builds scalable software, SaaS platforms, enterprise software, mobile apps, and AI-powered solutions for startups, enterprises, healthcare, and education.',
   keywords: [
