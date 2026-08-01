@@ -62,7 +62,7 @@ export const projects: Project[] = [
 
   // Corporate
   { id: 10, title: 'Barqiya Tech & Engineering Suite', client: 'Barqiya', category: 'Corporate', industry: 'Engineering & Tech', stack: ['Electrical LV', 'HVAC', 'CCTV & SIRA', 'Networking'], summary: 'Integrated electrical, HVAC, CCTV, and IT networking solutions across the UAE.', image: corporateImgs[0], featured: true },
-  { id: 11, title: 'Khabir Consulting Portal', client: 'Khabir Consultant', category: 'Corporate', industry: 'Corporate', stack: ['Next.js', 'Tailwind'], summary: 'Corporate website and client engagement portal.', image: corporateImgs[1], featured: true },
+  { id: 11, title: 'Khabir MEP Engineering & Approvals Portal', client: 'Khabir Consultant', category: 'Corporate', industry: 'MEP Engineering', stack: ['33 kV Electrical', 'HVAC', 'FEWA NOC', 'Plumbing'], summary: 'FEWA Category-1 electromechanical design, authority approvals, and site supervision.', image: corporateImgs[1], featured: true },
   { id: 12, title: 'CRM & Lead Pipeline', client: 'Apex Ventures', category: 'Corporate', industry: 'Corporate', stack: ['React', 'Node', 'Postgres'], summary: 'Sales CRM with automated pipeline and reporting.', image: corporateImgs[2] },
   { id: 13, title: 'Internal HR Dashboard', client: 'Northgate Group', category: 'Corporate', industry: 'Corporate', stack: ['Next.js', 'Prisma'], summary: 'HR analytics dashboard for recruitment and retention.', image: corporateImgs[3] },
 

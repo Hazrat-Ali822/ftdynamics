@@ -36,20 +36,20 @@ const caseStudies = [
     client: 'Khabir Consultant',
     url: 'https://khabirconsultant.ae',
     displayUrl: 'khabirconsultant.ae',
-    industry: 'Education & Corporate Consulting · UAE',
-    title: 'Scaling an E-Learning & Advisory Portal for Thousands of Learners',
+    industry: 'MEP Electromechanical Engineering · UAE (FEWA Category-1)',
+    title: 'FEWA Category-1 MEP Design, Authority Approvals & Supervision Systems',
     challenge:
-      'Delivering specialized consulting courses, interactive client sessions, and advisory deliverables to thousands of professionals across UAE and GCC smoothly.',
+      'Commercial buildings, industrial facilities, and residential towers in Ras Al Khaimah and the Northern Emirates required certified 33 kV electrical designs, HVAC load engineering, plumbing, fire fighting systems, and Etisalat/Civil Defence authority NOC approvals under strict timelines.',
     solution:
-      'We engineered a high-performance Next.js corporate portal and LMS with video streaming, automated progress tracking, client workspace portals, and secure document exchange.',
-    technologies: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'AWS'],
+      'We engineered an integrated MEP design, compliance management, and site supervision tracking platform providing digital CAD review, authority approval progress tracking, and 33 kV sub-station inspection logging.',
+    technologies: ['33 kV Electrical', 'HVAC Design', 'FEWA & Civil Defence', 'Fire & Low-Current', 'Next.js'],
     results: [
-      { label: 'Learners & Clients', value: '8k+' },
-      { label: 'Engagement Rate', value: '+42%' },
-      { label: 'Page Load Speed', value: '1.1s' },
+      { label: 'FEWA Licensing', value: 'Category-1' },
+      { label: 'Voltage Approval', value: '33 kV' },
+      { label: 'Authority NOC Rate', value: '100%' },
     ],
     impact:
-      'Scaled Khabir Consultant operations across the UAE, managing concurrent learning modules, advisory workflows, and client engagement seamlessly.',
+      'Deployed live at khabirconsultant.ae, managing MEP engineering designs, FEWA / Civil Defence / Etisalat authority approvals, and engineer-of-record site supervision for major construction projects across RAK and the UAE.',
   },
   {
     client: 'Barqiya',
