@@ -112,7 +112,7 @@ export function Products() {
                     rel="noopener noreferrer"
                     className="gap-2"
                   >
-                    Visit Product
+                    Visit Now
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </BrandButton>

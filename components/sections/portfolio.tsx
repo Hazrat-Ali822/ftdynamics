@@ -158,10 +158,10 @@ export function Portfolio() {
                           href={p.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-xl bg-accent/10 px-3.5 py-2 text-xs font-bold text-accent transition-all hover:bg-accent hover:text-white"
+                          className="inline-flex items-center gap-1.5 rounded-xl bg-accent/10 px-4 py-2 text-xs font-bold text-accent transition-all hover:bg-accent hover:text-white"
                         >
-                          Visit Live Project
-                          <ExternalLink className="h-3.5 w-3.5" />
+                          Visit Now
+                          <ArrowUpRight className="h-3.5 w-3.5" />
                         </a>
                       ) : (
                         <a
