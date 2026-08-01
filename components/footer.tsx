@@ -77,8 +77,9 @@ export function Footer() {
               >
                 <Phone className="h-4 w-4 text-accent" /> +92 314 0338880
               </a>
-              <p className="flex items-center gap-2.5 text-muted-foreground">
-                <MapPin className="h-4 w-4 text-accent" /> Islamabad, Pakistan
+              <p className="flex items-start gap-2.5 text-muted-foreground">
+                <MapPin className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+                <span>House #368-A, Street 180, Sector G-7/3, Islamabad</span>
               </p>
             </div>
             <div className="mt-6 flex items-center gap-2">

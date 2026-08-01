@@ -91,6 +91,7 @@ export default function RootLayout({
       'Software development company building scalable software, SaaS platforms, enterprise software, mobile apps, and AI-powered solutions.',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'House #368-A, Street 180, Sector G-7/3',
       addressLocality: 'Islamabad',
       addressCountry: 'PK',
     },

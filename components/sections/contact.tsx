@@ -225,13 +225,13 @@ export function Contact() {
                     </div>
                   </a>
                   <div className="flex items-start gap-3.5">
-                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                       <MapPin className="h-5 w-5" />
                     </span>
                     <div>
-                      <p className="text-xs text-muted-foreground">Office</p>
-                      <p className="text-sm font-medium text-foreground">
-                        Islamabad, Pakistan
+                      <p className="text-xs text-muted-foreground">Office Address</p>
+                      <p className="text-sm font-medium text-foreground leading-relaxed">
+                        House #368-A, Street 180, Sector G-7/3, Islamabad, Pakistan
                       </p>
                     </div>
                   </div>
@@ -250,9 +250,9 @@ export function Contact() {
 
               <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-card">
                 <iframe
-                  title="Office location"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=73.0%2C33.6%2C73.2%2C33.75&layer=mapnik&marker=33.6844%2C73.0479"
-                  className="h-56 w-full border-0"
+                  title="Office Location — House #368-A, Street 180, Sector G-7/3 Islamabad"
+                  src="https://maps.google.com/maps?q=Street%20180,%20G-7/3,%20Islamabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  className="h-64 w-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
